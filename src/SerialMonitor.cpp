@@ -1,5 +1,5 @@
 #include <iostream>
-#include "SerialCOM.h"
+#include "../lib/SerialCOM.h"
 using namespace std;
 
 int main()
