@@ -1,9 +1,6 @@
 #include <iostream>
-<<<<<<< HEAD
-#include "SerialCOM.h"
-=======
 #include "../lib/SerialCOM.h"
->>>>>>> dev
+
 using namespace std;
 
 int main()

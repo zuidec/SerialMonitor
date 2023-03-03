@@ -24,9 +24,6 @@ class SerialCOM
 		SerialCOM();
 		~SerialCOM();
 
-<<<<<<< HEAD
-
-=======
 		void Disconnect();									// Basic functionality
 		int Connect();										// Basic functionality
 		std::string GetError();								// Basic functionality
@@ -42,7 +39,6 @@ class SerialCOM
 		int baudRate;										// Default is 9600
 		char* COMPortName;									// Blank by default
 		std::vector<std::string> availablePorts;			// Used after calling ScanPorts() to see what ports are available
->>>>>>> dev
 		
 	private:
 		DWORD COMError;										// Variable to store the results of the windows GetLastError() as needed
@@ -61,26 +57,7 @@ class SerialCOM
 		void SetError(std::string NewError);				// Basic functionality
 		void Initialize();									// Called from Connect() to set up timeouts, overlaps, and DCB
 		void FlushBuffer(char* buffer, int bufferSize);		// Basic functionality
-<<<<<<< HEAD
 
-
-		void Disconnect();									// Basic functionality
-		int Connect();										// Basic functionality
-		std::string GetError();								// Basic functionality
-		void ClearErrors();									// Basic functionality
-		bool ReadBytes(std::string* Line, int bytesToRead);	// In development
-		bool ReadLine(std::string* Line);					// Basic functionality
-		bool ReadUntil(std::string* Line, char terminator); // In development
-		void Write(std::string* Line, int bytesToWrite);	// Not implemented yet
-		bool WriteLine(std::string* Line);					// Basic functionality, need to implement procedure to continue writing if the write isn't complete
-		bool isConnected();									// Very basic, needs more implementation or might not be that useful
-		bool isValidPort(int COMPortNumber);				// Check if the specified COM port is available/valid
-		void ScanPorts();									// Iterate through COM0-COM20 and store valid COM ports in <availablePorts>
-		int baudRate;										// Default is 9600
-		char* COMPortName;									// Blank by default
-		std::vector<std::string> availablePorts;			// Used after calling ScanPorts() to see what ports are available
-=======
->>>>>>> dev
 };
 
 #endif
