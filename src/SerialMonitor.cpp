@@ -1,3 +1,10 @@
+///
+///	SerialMonitor is a basic command line serial monitor
+/// 
+/// Created by Case Zuiderveld
+/// Last updated 3/2/2023
+///
+
 #include <iostream>
 #include "../lib/SerialCOM.h"
 using namespace std;
